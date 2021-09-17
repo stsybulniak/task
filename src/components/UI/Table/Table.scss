@@ -1,0 +1,22 @@
+.Table {
+  border-collapse: collapse;
+  border: 1px solid #000;
+
+  tr:nth-child(even) {
+    background: #ccc;
+  }
+
+  th {
+    border: 1px solod #000;
+    color: #000;
+    padding: 1.2rem;
+    background-color: var(--color-primary);
+    color: white;
+  }
+
+  td {
+    border: 1px solid #000;
+    padding: 1.2rem;
+    width: 9rem;
+  }
+}

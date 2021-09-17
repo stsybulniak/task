@@ -1,0 +1,17 @@
+.Controls {
+  width: 4rem;
+  position: relative;
+
+  &-triangle {
+    position: absolute;
+    left: 1rem;
+    cursor: pointer;
+
+    &--left {
+      top: calc(50% - 2.5rem);
+    }
+    &--right {
+      top: 50%;
+    }
+  }
+}

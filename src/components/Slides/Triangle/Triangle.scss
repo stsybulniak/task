@@ -1,0 +1,17 @@
+.Triangle {
+  width: 2rem;
+  height: 1.5rem;
+  display: inline-block;
+  background-color: var(--color-primary);
+  clip-path: polygon(50% 0, 100% 100%, 0 100%);
+
+  &--left {
+    -webkit-transform: rotate(-90deg);
+    transform: rotate(-90deg);
+  }
+
+  &--right {
+    -webkit-transform: rotate(90deg);
+    transform: rotate(90deg);
+  }
+}

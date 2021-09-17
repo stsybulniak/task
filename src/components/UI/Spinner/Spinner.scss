@@ -1,0 +1,48 @@
+.Spinner {
+  display: flex;
+  width: 5rem;
+  height: 5rem;
+  text-align: center;
+  font-size: 1rem;
+
+  &--center {
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  &--wave {
+    background-color: var(--color-primary);
+    height: 100%;
+    width: 0.6rem;
+    display: inline-block;
+    margin: 0.2rem;
+
+    animation: Spinner-waveStretchDelay 1.2s infinite ease-in-out;
+  }
+
+  &__2 {
+    animation-delay: -1.1s;
+  }
+  &__3 {
+    animation-delay: -1s;
+  }
+  &__4 {
+    animation-delay: -0.9s;
+  }
+  &__5 {
+    animation-delay: -0.8s;
+  }
+}
+
+@keyframes Spinner-waveStretchDelay {
+  0%,
+  40%,
+  100% {
+    transform: scaleY(0.4);
+  }
+  20% {
+    transform: scaleY(1);
+  }
+}

@@ -1,0 +1,30 @@
+.SlidesNav {
+  height: 8rem;
+  background-color: var(--color-secondary);
+  color: var(--color-primary);
+  margin-bottom: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 0.5rem;
+
+  &__wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &__item {
+    &:not(:first-child) {
+      margin-left: 3rem;
+    }
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.25s;
+
+    &--active {
+      font-size: 1.6rem;
+      cursor: auto;
+    }
+  }
+}
